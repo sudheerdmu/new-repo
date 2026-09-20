@@ -1,7 +1,7 @@
 public with sharing class AccountTriggerHandler {
     public static void handleBeforeDelete(List<Account> oldAccounts) {
         // High-Value Criteria thresholds
-        Decimal revenueThreshold = 10000000; // $10,000,000
+        Decimal revenueThreshold = 15000000; // $15,000,000
         Decimal oppCountThreshold = 5;
 
         Map<Id, Account> accountsToCheckMap = new Map<Id, Account>();
